@@ -26,11 +26,11 @@ def current_weather():
                 zip_code = int(request.args['zip'])
         except:
             # Throw error if not valid Zip Code
-            return jsonify(Error='Zip provided is not a valid zip code')
+            return jsonify(Error='Zip provided is not a valid zip code'), 404
 
     else:
         return jsonify(
-            Error='No zip code query provided. Please provide an ID to lookup by - example.com/api/weather/current?zip=10018')
+            Error='No zip code query provided. Please provide an ID to lookup by - example.com/api/weather/current?zip=10018'), 404
 
     r = requests.get(
         'http://api.openweathermap.org/data/2.5/weather?zip={}&APPID=929be9dbced9ad5fe63ae8c31134eb3f'.format(zip_code))
@@ -52,7 +52,7 @@ def forcast_weather():
                 zip_code = int(request.args['zip'])
         except:
             # Throw error if not valid Zip Code
-            return jsonify(Error='Zip provided is not a valid zip code')
+            return jsonify(Error='Zip provided is not a valid zip code'), 404
 
     else:
         return jsonify(
@@ -70,9 +70,12 @@ def request_log():
         try:
             id = int(request.args['id'])
         except:
-            return jsonify(Error='ID provided not a valid ID')
+            return jsonify(Error='ID provided not a valid ID'), 404
         results = api_query('''select * from request_log where id = {}'''.format(id))
-        return jsonify(results), 200
+        if results:
+            return jsonify(results), 200
+        else:
+            return jsonify(Error='ID not found'), 404
     else:
         results = api_query('''select * from request_log''')
         return jsonify(results), 200
