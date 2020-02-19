@@ -1,4 +1,5 @@
 from flask import Blueprint, jsonify, request
+from db.sqlite3 import api_log,api_query
 import requests
 
 restful_api = Blueprint('restful_api', __name__)
@@ -34,6 +35,7 @@ def current_weather():
     r = requests.get(
         'http://api.openweathermap.org/data/2.5/weather?zip={}&APPID=929be9dbced9ad5fe63ae8c31134eb3f'.format(zip_code))
 
+    api_log(request.base_url,zip_code,r.text)
     return r.json(), 200
 
 @restful_api.route('/weather/forecast')
@@ -59,4 +61,10 @@ def forcast_weather():
     r = requests.get(
         'http://api.openweathermap.org/data/2.5/forecast?zip={}&APPID=929be9dbced9ad5fe63ae8c31134eb3f'.format(zip_code))
 
+    api_log(request.base_url, zip_code, r.text)
     return r.json(), 200
+
+@restful_api.route('/log')
+def request_log():
+    results = api_query('''select * from request_log''')
+    return jsonify(results), 200
