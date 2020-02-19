@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08f9f160-b305-4d6f-80eb-76de77e7ab4e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/flaskAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flaskAPI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="application.passwordSafe" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -91,6 +92,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -103,6 +116,7 @@
       <updated>1582074790964</updated>
       <workItem from="1582074801150" duration="421000" />
       <workItem from="1582075271498" duration="4538000" />
+      <workItem from="1582122827773" duration="470000" />
     </task>
     <servers />
   </component>
@@ -114,7 +128,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -141,9 +157,10 @@
       <screen x="53" y="23" width="1867" height="1057" />
     </state>
     <state width="1825" height="290" key="GridCell.Tab.0.right/1920.0.1920.1080/53.23.1867.1057@53.23.1867.1057" timestamp="1582075307484" />
-    <state x="495" y="190" key="SettingsEditor" timestamp="1582076662260">
-      <screen x="53" y="23" width="1867" height="1057" />
+    <state x="2318" y="184" key="SettingsEditor" timestamp="1582122890682">
+      <screen x="1920" y="24" width="1680" height="1010" />
     </state>
+    <state x="2318" y="184" key="SettingsEditor/0.0.1536.824/-1680.24.1680.1010/1920.24.1680.1010@1920.24.1680.1010" timestamp="1582122890682" />
     <state x="495" y="190" key="SettingsEditor/1920.0.1920.1080/53.23.1867.1057@53.23.1867.1057" timestamp="1582076662260" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
