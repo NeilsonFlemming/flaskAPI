@@ -3,8 +3,10 @@ import sqlite3
 def db_setup():
     conn = sqlite3.connect('db/app.db')
     cur = conn.cursor()
+    #cur.execute('''DROP TABLE request_log''')
     cur.execute('''CREATE TABLE IF NOT EXISTS request_log
-                             (endpoint TEXT,
+                             (id INTEGER PRIMARY KEY AUTOINCREMENT, 
+                              endpoint TEXT,
                               zip INT,
                               response BLOB)''')
 
@@ -21,10 +23,9 @@ def api_query(query):
     result = cur.execute(query).fetchall()
     return result
 
-
 def api_log(endpoint,zip,json):
     conn = sqlite3.connect('db/app.db')
     cur = conn.cursor()
-    cur.execute('''INSERT INTO request_log VALUES (?,?,?)''',(endpoint,zip,json))
+    cur.execute('''INSERT INTO request_log (endpoint, zip, response) VALUES (?,?,?)''',(endpoint,zip,json))
     cur.execute('''COMMIT''')
     conn.close()

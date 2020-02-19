@@ -66,5 +66,14 @@ def forcast_weather():
 
 @restful_api.route('/log')
 def request_log():
-    results = api_query('''select * from request_log''')
-    return jsonify(results), 200
+    if 'id' in request.args:
+        try:
+            id = int(request.args['id'])
+        except:
+            return jsonify(Error='ID provided not a valid ID')
+        results = api_query('''select * from request_log where id = {}'''.format(id))
+        return jsonify(results), 200
+    else:
+        results = api_query('''select * from request_log''')
+        return jsonify(results), 200
+
