@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08f9f160-b305-4d6f-80eb-76de77e7ab4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/restful_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,14 +57,15 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\neilsonflemming\PycharmProjects\flaskAPI\api" />
       <recent name="C:\Users\neilsonflemming\PycharmProjects\flaskAPI" />
       <recent name="$PROJECT_DIR$/api" />
     </key>
   </component>
   <component name="RunManager" selected="Flask server.Flask (app.py)">
-    <configuration name="Flask (api.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+    <configuration name="Flask (api/restful_api.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
       <module name="flaskAPI" />
-      <option name="target" value="$PROJECT_DIR$/api.py" />
+      <option name="target" value="$PROJECT_DIR$/api/restful_api.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,7 +95,7 @@
     </configuration>
     <configuration name="untitled1" type="Python.FlaskServer">
       <module name="flaskAPI" />
-      <option name="target" value="$PROJECT_DIR$/api.py" />
+      <option name="target" value="$PROJECT_DIR$/api/restful_api.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -110,7 +111,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Flask server.Flask (app.py)" />
-        <item itemvalue="Flask server.Flask (api.py)" />
+        <item itemvalue="Flask server.Flask (api/restful_api.py)" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +139,7 @@
       <updated>1582074790964</updated>
       <workItem from="1582074801150" duration="421000" />
       <workItem from="1582075271498" duration="4538000" />
-      <workItem from="1582122827773" duration="3040000" />
+      <workItem from="1582122827773" duration="4290000" />
     </task>
     <servers />
   </component>
