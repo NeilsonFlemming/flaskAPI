@@ -4,6 +4,7 @@ from api.graphql_api import graphql_api
 from db.sqlite3 import db_setup
 
 #https://programminghistorian.org/en/lessons/creating-apis-with-python-and-flask
+#https://peaceful-thicket-43573.herokuapp.com/
 
 app = Flask(__name__)
 app.config["DEBUG"] = True

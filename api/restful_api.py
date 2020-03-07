@@ -33,7 +33,7 @@ def current_weather():
             Error='No zip code query provided. Please provide an ID to lookup by - example.com/api/weather/current?zip=10018'), 404
 
     r = requests.get(
-        'http://api.openweathermap.org/data/2.5/weather?zip={}&APPID=929be9dbced9ad5fe63ae8c31134eb3f'.format(zip_code))
+        'http://api.openweathermap.org/data/2.5/weather?zip={}&units=imperial&APPID=929be9dbced9ad5fe63ae8c31134eb3f'.format(zip_code))
 
     api_log(request.base_url,zip_code,r.text)
     return r.json(), 200
@@ -59,7 +59,7 @@ def forcast_weather():
             Error='No zip code query provided. Please provide an ID to lookup by - example.com/api/weather/forecast?zip=10018')
 
     r = requests.get(
-        'http://api.openweathermap.org/data/2.5/forecast?zip={}&APPID=929be9dbced9ad5fe63ae8c31134eb3f'.format(zip_code))
+        'http://api.openweathermap.org/data/2.5/forecast?zip={}&units=imperial&APPID=929be9dbced9ad5fe63ae8c31134eb3f'.format(zip_code))
 
     api_log(request.base_url, zip_code, r.text)
     return r.json(), 200
