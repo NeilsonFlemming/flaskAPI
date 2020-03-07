@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 from api.restful_api import restful_api
 from api.graphql_api import graphql_api
 from db.sqlite3 import db_setup
@@ -7,6 +8,7 @@ from db.sqlite3 import db_setup
 #https://peaceful-thicket-43573.herokuapp.com/
 
 app = Flask(__name__)
+cors = CORS(app)
 app.config["DEBUG"] = True
 app.register_blueprint(restful_api, url_prefix='/api')
 app.register_blueprint(graphql_api, url_prefix='/graphql')
