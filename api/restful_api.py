@@ -41,7 +41,8 @@ def currentWeather():
     now = datetime.now()
     dt_string = now.strftime("%Y-%m-%d %H:%M:%S")
 
-    dailyWeather = {dt_string: {
+    dailyWeather = {'data': {
+        'date': dt_string,
         'temp': weatherData['main']['temp'],
         'temp_max': weatherData['main']['temp_max'],
         'temp_min': weatherData['main']['temp_min'],
@@ -86,7 +87,7 @@ def forcastWeather():
     print(weatherData)
 
     dailyWeather = {}
-    while day < days:
+    for day in len(weatherData):
         print(day)
         #for each day in the number of days add data to dictonary
         data = {weatherData['list'][day]['dt_txt'] : {
