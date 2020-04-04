@@ -4,7 +4,6 @@
     <list default="true" id="08f9f160-b305-4d6f-80eb-76de77e7ab4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/restful_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/restful_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/app.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +165,7 @@
       <workItem from="1582075271498" duration="4538000" />
       <workItem from="1582122827773" duration="11729000" />
       <workItem from="1582161704609" duration="8194000" />
-      <workItem from="1586034887278" duration="1922000" />
+      <workItem from="1586034887278" duration="2699000" />
     </task>
     <servers />
   </component>
