@@ -67,7 +67,7 @@ def getCurrentWeather():
            'temp_min': weatherData['daily'][0]['temp']['min'],
            'weather_description': weatherData['daily'][0]['weather'][0]['main'],
            'weather_description_detail': weatherData['daily'][0]['weather'][0]['description'],
-            'weather_id': weatherData['daily'][0]['weather'][0]['main']
+            'weather_id': weatherData['daily'][0]['weather'][0]['id']
     }
 
     endpoint_response = {
@@ -113,7 +113,7 @@ def getForcastWeather():
             'temp_min': day['temp']['min'],
             'weather_description': day['weather'][0]['main'],
             'weather_description_detail': day['weather'][0]['description'],
-            'weather_id': day['weather'][0]['main']
+            'weather_id': day['weather'][0]['id']
         }
         dailyWeather.append(weather)
 
