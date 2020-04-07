@@ -18,8 +18,9 @@ def weatherEndpoint(zipCode):
 
     response = requests.get(
         'https://api.openweathermap.org/data/2.5/onecall?lat={}&lon={}&units=imperial&APPID=929be9dbced9ad5fe63ae8c31134eb3f'.format(
-            longitude, latitude))
+            latitude, longitude))
 
+    print(response.url)
     weatherData = response.json()
 
     return(locationData,weatherData)
